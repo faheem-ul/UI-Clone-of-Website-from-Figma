@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Box, Text, Heading, Icon, Flex } from "@chakra-ui/react";
+import { Box, Icon, Flex } from "@chakra-ui/react";
 import { PhoneIcon, EmailIcon } from "@chakra-ui/icons";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

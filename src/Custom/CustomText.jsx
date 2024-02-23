@@ -11,7 +11,6 @@ function CustomText({ children, ...rest }) {
         fontWeight="400"
         lineHeight="22px"
         letterSpacing="0em"
-        // text-align="right"
         {...rest}
       >
         {children}

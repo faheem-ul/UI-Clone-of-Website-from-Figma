@@ -11,7 +11,7 @@ import CustomHeading from "../../Custom/CustomHeading";
 function Navbar() {
   return (
     <>
-      <Flex gap="200px" justifyContent="center">
+      <Flex gap="160px" justifyContent="center">
         <Flex
           // width="1440px"
           height="80px"
@@ -50,6 +50,7 @@ function Navbar() {
               icon={faHouse}
               width="24px"
               height="24px"
+              color="white"
               mt="11px"
               ml="12px"
               padding="0px, 0px, 0px, 0p"
@@ -90,7 +91,9 @@ function Navbar() {
               mb="7px"
               padding="0px, 0px, 0px, 0p"
             />
-            Add Listing
+            <CustomText color="white" ml="5px">
+              Add Listing
+            </CustomText>
           </Button>
         </Flex>
       </Flex>
