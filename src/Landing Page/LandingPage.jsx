@@ -6,7 +6,7 @@ import TopSection from "./TopSection/TopSection";
 function LandingPage() {
   return (
     <>
-      {/* <Header></Header> */}
+      <Header></Header>
       <Navbar />
       <TopSection />
     </>
