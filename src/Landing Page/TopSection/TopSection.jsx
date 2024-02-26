@@ -59,7 +59,7 @@ function TopSection() {
             Integer a dolor eu sapien sodales vulputate ac in purus.
           </CustomText>
           <CustomSlider />
-          <Flex mt="50px" ml="350px" gap="100px">
+          <Flex mt="50px" ml="350px" gap="0px">
             <Flex
               width="360px"
               height="100px"
