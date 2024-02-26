@@ -21,7 +21,7 @@ function TopSection() {
   return (
     <>
       <Flex
-        justify="space-between"
+        // justify="space-between"
         w="100%"
         h="100%"
         height="902px"
@@ -59,7 +59,11 @@ function TopSection() {
             Integer a dolor eu sapien sodales vulputate ac in purus.
           </CustomText>
           <CustomSlider />
-          <Flex mt="50px" ml="350px" gap="0px">
+          <Flex
+            mt="50px"
+            // ml="350px"
+            gap="0px"
+          >
             <Flex
               width="360px"
               height="100px"
@@ -86,7 +90,7 @@ function TopSection() {
                     fontSize="19.4px"
                     fontWeight="500"
                     lineHeight="29px"
-                    ml="5px"
+                    // ml="5px"
                   >
                     72k+ Happy Customers
                   </CustomHeading>
@@ -109,7 +113,11 @@ function TopSection() {
                   <img src={newlisting} alt="new listing building image" />
                 </Box>
                 <Box width="181px" height="43px">
-                  <CustomHeading lineHeight="29.1px" fontSize="20px">
+                  <CustomHeading
+                    fontSize="19.4px"
+                    fontWeight="500"
+                    lineHeight="29px"
+                  >
                     200+ New Listings Everyday!
                   </CustomHeading>
                 </Box>
@@ -140,6 +148,7 @@ function TopSection() {
               Contact Us Now
             </CustomText>
             <Box
+              padding="0px 20px"
               width="340px"
               bgColor="rgba(58, 12, 163, 1)"
               border="1px solid"

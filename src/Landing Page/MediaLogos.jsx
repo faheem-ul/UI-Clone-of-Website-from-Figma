@@ -36,7 +36,7 @@ function MediaLogos() {
           Trusted by 100+ Companies across the globe!{" "}
         </CustomText>
       </Flex>
-      <Flex mt="50px" justifyContent="center" gap="120px">
+      <Flex mt="50px" justifyContent="space-between">
         {Companies.map((company, index) => {
           return <img key={index} src={company} alt="this is company logo" />;
         })}
