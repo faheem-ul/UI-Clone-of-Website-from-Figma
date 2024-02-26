@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./Header/Header";
 import Navbar from "./Navbar/Navbar";
 import TopSection from "./TopSection/TopSection";
+import MediaLogos from "./MediaLogos";
 
 function LandingPage() {
   return (
@@ -9,6 +10,7 @@ function LandingPage() {
       <Header></Header>
       <Navbar />
       <TopSection />
+      <MediaLogos />
     </>
   );
 }
