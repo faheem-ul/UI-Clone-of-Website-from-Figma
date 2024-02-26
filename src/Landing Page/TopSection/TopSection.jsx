@@ -1,12 +1,21 @@
 import React from "react";
 
-import { Box, Flex } from "@chakra-ui/react";
+import { Box, Flex, position } from "@chakra-ui/react";
 
 import CustomText from "../../Custom/CustomText";
 import CustomHeading from "../../Custom/CustomHeading";
 import CustomSlider from "../../Custom/CustomSlider/CustomSlider";
 import CustomInput from "../../Custom/CustomInput";
 import CustomButton from "../../Custom/CustomButton";
+
+import client1 from "../../assets/Pictures/ClientsPics/client1.jpg";
+import client2 from "../../assets/Pictures/ClientsPics/client2.png";
+import client3 from "../../assets/Pictures/ClientsPics/client3.jpg";
+import client4 from "../../assets/Pictures/ClientsPics/client4.jpg";
+import client5 from "../../assets/Pictures/ClientsPics/client5.jpg";
+import client6 from "../../assets/Pictures/ClientsPics/client6.jpg";
+import newlisting from "../../assets/Pictures/newListing.jpg";
+const Clients = [client6, client5, client4, client3, client2, client1];
 
 function TopSection() {
   return (
@@ -16,22 +25,13 @@ function TopSection() {
         w="100%"
         h="100%"
         height="902px"
-        // mt="20px"s
         borderRadius="0px 0px 800px 800px"
-        //   border="0px, 0px, 1px, 0px"
         bg="linear-gradient(to bottom, rgba(76, 201, 240, 0) 0%, rgba(67, 97, 238, 0.3)
      100%)"
-        // gap="300px"
       >
-        <Flex
-          direction="column"
-          //   alignItems="center"
-          //   width="1440px"
-        >
+        <Flex direction="column">
           <CustomText
             fontSize="19.4px"
-            // width="207px"
-            // height="14px"
             pt="80px"
             ml="161px"
             color="rgba(67, 97, 238, 1)"
@@ -59,6 +59,63 @@ function TopSection() {
             Integer a dolor eu sapien sodales vulputate ac in purus.
           </CustomText>
           <CustomSlider />
+          <Flex mt="50px" ml="350px" gap="100px">
+            <Flex
+              width="360px"
+              height="100px"
+              borderRadius="50px"
+              bgColor="rgba(255, 255, 255, 1)"
+            >
+              <Flex alignItems="center">
+                {Clients.map((client, index) => {
+                  return (
+                    <img
+                      style={{
+                        position: "relative",
+                        left: `${(Clients.length - index - 1) * 10}px`,
+                        borderRadius: "50px",
+                      }}
+                      key={index}
+                      src={client}
+                      alt="this is the client image"
+                    />
+                  );
+                })}
+                <Box>
+                  <CustomHeading
+                    fontSize="19.4px"
+                    fontWeight="500"
+                    lineHeight="29px"
+                    ml="5px"
+                  >
+                    72k+ Happy Customers
+                  </CustomHeading>
+                </Box>
+              </Flex>
+            </Flex>
+            <Flex
+              width="360px"
+              height="100px"
+              borderRadius="50px"
+              bgColor="rgba(255, 255, 255, 1)"
+              justifyContent="center"
+            >
+              <Flex justifyContent="baseline" alignItems="center" gap="10px">
+                <Box
+                  // width="60px"
+                  height="60px"
+                  borderRadius="50px"
+                >
+                  <img src={newlisting} alt="new listing building image" />
+                </Box>
+                <Box width="181px" height="43px">
+                  <CustomHeading lineHeight="29.1px" fontSize="20px">
+                    200+ New Listings Everyday!
+                  </CustomHeading>
+                </Box>
+              </Flex>
+            </Flex>
+          </Flex>
         </Flex>
         <Flex
           width="420px"
@@ -68,7 +125,6 @@ function TopSection() {
           mr="150px"
           borderRadius="20px 20px 20px 20px"
           justifyContent="center"
-          // left: 860px
         >
           <Flex
             direction="column"
