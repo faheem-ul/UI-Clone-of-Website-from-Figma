@@ -32,11 +32,6 @@ function HeroSection() {
             <CustomButton>
               <CustomText color="rgba(43, 43, 43, 1)">Blogs</CustomText>
             </CustomButton>
-
-            {/* <Box>2</Box>
-            <Box>3</Box>
-            <Box>4</Box>
-            <Box>5 </Box> */}
           </Flex>
           <Flex gap="5px">
             <Box>icon</Box>
