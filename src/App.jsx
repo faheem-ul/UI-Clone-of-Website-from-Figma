@@ -1,8 +1,13 @@
-import React from "react";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./App.css";
-import MainPage from "./Components/MainPage/MainPage";
+import MainPage from "./pages/landing";
 
 function App() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <>
       <MainPage />

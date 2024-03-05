@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "checkJs": false,
+    "jsx": "react",
+    "baseUrl": ".",
+    "paths": {
+      "@src/*": ["src/*"],
+      "@/components/*": ["src/Components/*"],
+      "@/pages/*": ["src/pages/*"],
+      "@/firebaseApp/*": ["src/firebase/*"]
+    }
+  },
+  "include": ["src"]
+}
