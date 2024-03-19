@@ -33,7 +33,7 @@ function HeroSectionNav({ onCloseDrawer }) {
         direction={{ base: "column-reverse", md: "row", xl: "row" }}
         margin="0 auto"
         justifyContent="space-between"
-        p={{ base: "0px", md: "20px 100px", xl: "20px 100px" }}
+        p={{ base: "0px", md: "20px 0px", xl: "20px 100px" }}
         alignItems="center"
       >
         <Flex

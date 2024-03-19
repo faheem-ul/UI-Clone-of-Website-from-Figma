@@ -25,7 +25,7 @@ function HamBurger() {
   return (
     <Box
       className="lg:hidden"
-      display={{ base: "block", md: "none", xl: "none" }}
+      display={{ base: "block", md: "block", xl: "none" }}
     >
       <Hamburger toggled={isOpen} toggle={setOpen}>
         Open

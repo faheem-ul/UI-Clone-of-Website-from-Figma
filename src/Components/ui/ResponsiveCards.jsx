@@ -10,7 +10,7 @@ function ResponsiveCards() {
     <div>
       <Flex direction="column" alignItems="center" pb="65px">
         <Flex
-          display={{ base: "flex", md: "none", xl: "none" }}
+          display={{ base: "flex", md: "flex", xl: "none" }}
           width={{ base: "333px", md: "400px", xl: "400px" }}
           py="30px"
           mb="30px"
@@ -43,7 +43,7 @@ function ResponsiveCards() {
         {/*flex of second card starts inside the left flex */}
 
         <Flex
-          display={{ base: "flex", md: "none", xl: "none" }}
+          display={{ base: "flex", md: "flex", xl: "none" }}
           width={{ base: "333px", md: "400px", xl: "400px" }}
           py="30px"
           bgColor="rgba(255, 255, 255, 1)"

@@ -16,14 +16,14 @@ function LastSection() {
       {/* this is the main flex */}
 
       <Flex
-        direction={{ base: "column", md: "row", xl: "row " }}
+        direction={{ base: "column", md: "column", xl: "row " }}
         justifyContent="center"
         mt={{ base: "380px", md: "188px", xl: "188px" }}
         gap={{ base: "0px", md: "43px", xl: "43px" }}
       >
         {/* this is the left side flex inside the main flex */}
 
-        <Flex direction="column" m={{ base: "auto", md: "0px", xl: "0px" }}>
+        <Flex direction="column" m={{ base: "auto", md: "auto", xl: "0px" }}>
           <CustomText
             color="rgba(67, 97, 238, 1)"
             fontWeight="500"
@@ -34,15 +34,15 @@ function LastSection() {
             WHO ARE WE
           </CustomText>
           <CustomHeading
-            lineHeight={{ base: "41px", md: "47px", xl: "47px" }}
-            fontSize={{ base: "28px", md: "40px", xl: "40px" }}
-            width={{ base: "338px", md: "500px", xl: "500px" }}
+            lineHeight={{ base: "41px", md: "41px", xl: "47px" }}
+            fontSize={{ base: "28px", md: "28px", xl: "40px" }}
+            width={{ base: "338px", md: "338px", xl: "500px" }}
             mb="20px"
           >
             Assisting individuals in locating the appropriate real estate.
           </CustomHeading>
           <CustomText
-            width={{ base: "333px", md: "500px", xl: "500px" }}
+            width={{ base: "333px", md: "333px", xl: "500px" }}
             color="rgba(128, 128, 128, 1)"
             mt="-10px"
             pb="40px"
@@ -58,8 +58,8 @@ function LastSection() {
             data-aos="fade-right"
             data-aos-easing="ease-in-out"
             data-aos-duration="1000"
-            display={{ base: "none", md: "flex", xl: "flex" }}
-            width={{ base: "333px", md: "400px", xl: "400px" }}
+            display={{ base: "none", md: "none", xl: "flex" }}
+            width={{ base: "333px", md: "333px", xl: "400px" }}
             py="30px"
             mb="30px"
             bgColor="rgba(255, 255, 255, 1)"
@@ -94,8 +94,8 @@ function LastSection() {
             data-aos="fade-right"
             data-aos-easing="ease-in-out"
             data-aos-duration="1000"
-            display={{ base: "none", md: "flex", xl: "flex" }}
-            width={{ base: "333px", md: "400px", xl: "400px" }}
+            display={{ base: "none", md: "none", xl: "flex" }}
+            width={{ base: "333px", md: "333px", xl: "400px" }}
             py="30px"
             bgColor="rgba(255, 255, 255, 1)"
             justifyContent="center"
@@ -122,13 +122,14 @@ function LastSection() {
 
         {/* right side flex starts from here */}
         <Flex
+          justifyContent="center"
           direction="row"
           position="relative"
           top="53px"
-          gap={{ base: "40px", md: "20px", xl: "20px" }}
+          gap={{ base: "40px", md: "40px", xl: "20px" }}
           ml="17px"
-          mt={{ base: "-20px", md: "0px", xl: "0px" }}
-          mb={{ base: "70px", md: "0px", xl: "0px" }}
+          mt={{ base: "-20px", md: "-20px", xl: "0px" }}
+          mb={{ base: "70px", md: "70px", xl: "0px" }}
         >
           <Image
             data-aos="fade-right"
@@ -142,11 +143,7 @@ function LastSection() {
           />
           <Flex direction="column" position="relative" right="50px">
             <Image
-              // data-aos="fade-right"
-              // data-aos-easing="ease-in-out"
-              // data-aos-duration="2000"
               className="rotatation"
-              // animation="rotation 2s infinite linear"
               src={logo}
               position="absolute"
               top={{ base: "-9%", md: "-12%", xl: "-12%" }}
@@ -163,8 +160,8 @@ function LastSection() {
               w={{ base: "143px", md: "280px", xl: "280px" }}
             />
             <Box
-              width={{ base: "40px", md: "40px", xl: "60px" }}
-              height={{ base: "40px", md: "40px", xl: "60px" }}
+              width={{ base: "40px", md: "60px", xl: "60px" }}
+              height={{ base: "40px", md: "60px", xl: "60px" }}
               borderRadius="100px"
               bgGradient="linear-gradient(180deg, #4361EE 0%, rgba(67, 97, 238, 0) 100%)"
               position="absolute"

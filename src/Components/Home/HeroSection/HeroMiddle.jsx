@@ -11,7 +11,7 @@ function HeroMiddle() {
     <article>
       <Flex
         alignItems={{ base: "center" }}
-        direction={{ base: "column", md: "row", xl: "row" }}
+        direction={{ base: "column", md: "column", xl: "row" }}
         justifyContent="space-around"
         mt={{ base: "49px", md: "90px", xl: "90px" }}
       >

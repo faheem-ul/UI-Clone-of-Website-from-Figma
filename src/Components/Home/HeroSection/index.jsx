@@ -16,13 +16,13 @@ function HeroSection() {
       bg="linear-gradient(to bottom, rgba(76, 201, 240, 0) 0%, rgba(67, 97, 238, 0.3)
         100%)"
     >
-      <Box display={{ base: "none", md: "block", xl: "block" }}>
+      <Box display={{ base: "none", md: "none", xl: "block" }}>
         <HeroSectionNav />
       </Box>
 
       <Flex alignItems="center" justifyContent="space-between" padding="0 22px">
         <Flex
-          display={{ base: "Flex", md: "none", xl: "none" }}
+          display={{ base: "Flex", md: "Flex", xl: "none" }}
           gap="5px"
           alignItems="center"
         >
