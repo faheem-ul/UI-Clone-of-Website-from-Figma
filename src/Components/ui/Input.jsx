@@ -3,7 +3,6 @@ import { Input } from "@chakra-ui/input";
 function CustomInput({ ...props }) {
   return (
     <Input
-      type="text"
       width="340px"
       height="59px"
       borderRadius="20px"

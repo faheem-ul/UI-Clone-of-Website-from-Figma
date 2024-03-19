@@ -1,4 +1,4 @@
-import { Box, Flex, Textarea } from "@chakra-ui/react";
+import { Box, Flex, Textarea, FormControl } from "@chakra-ui/react";
 
 import CustomText from "../../ui/Text";
 import CustomHeading from "../../ui/Heading";
@@ -96,12 +96,12 @@ function HeroMiddle() {
             border="1px solid"
             color="rgba(170, 170, 170, 1)"
             position="relative"
-            bottom="29px"
+            bottom="45px"
           ></Box>
 
-          <CustomInput border="none" placeholder="Full Name" />
+          <CustomInput border="none" type="text" placeholder="Full Name" />
 
-          <CustomInput border="none" placeholder="Email Address" />
+          <CustomInput border="none" type="Email" placeholder="Email Address" />
 
           <Textarea
             border="none"
@@ -119,6 +119,7 @@ function HeroMiddle() {
             borderRadius="50px"
             width="340px"
             p="30px"
+            type="submit"
           >
             Submit
           </CustomButton>
