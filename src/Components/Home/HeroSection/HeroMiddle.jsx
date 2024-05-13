@@ -1,4 +1,4 @@
-import { Box, Flex, Textarea, FormControl } from "@chakra-ui/react";
+import { Box, Flex, Textarea } from "@chakra-ui/react";
 
 import CustomText from "../../ui/Text";
 import CustomHeading from "../../ui/Heading";

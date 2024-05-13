@@ -45,6 +45,7 @@ function CustomSlider() {
         order={2}
         spaceBetween={50}
         slidesPerGroupSkip={3}
+        speed={1000}
         pagination={{
           clickable: true,
           el: ".custom-pagination",
